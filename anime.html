@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel="stylesheet" href="pege.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"/>
+    </head>
+    <body>
+        <div class="box" id="box"></div>
+        <input class="button" id="button" type="button" value="要素を動かす">
+        <div class="box" id="box2"></div>
+        <script src="./anime.js"></script> 
+        <h1 class="ball">自己紹介</h1>
+        <div class="box animated backInDown ">bounce</div>
+<canvas id="myChart"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    const ctx = document.getElementById("myChart").getContext("2d");
+    const chart = new Chart(ctx, {
+        type: "bar",
+
+        // データを指定
+        data: {
+            labels: ["月", "火", "水", "木", "金", "土", "日"],
+            datasets: [{
+                label: "dataset example",
+                borderColor: "rgb(75, 192, 192)",
+                fill: false,
+                data: [10, 2, 5, 4, 6, 7, 11]
+            }]
+        },
+    });
+</script>
+<main id=app>
+    
+    <p>Please checkout the newer version of this; <a href="https://codepen.io/simeydotme/pen/abYWJdX" target="_blank">https://codepen.io/simeydotme/pen/abYWJdX</a></p>
+    
+    <h1>Pokemon Card, Holo Effect</h1>
+    
+    <section class="cards">
+      <div class="card charizard animated"></div>
+      <div class="card pika animated"></div>
+      <div class="card eevee animated"></div>
+      <div class="card mewtwo animated"></div>
+    </section>
+    
+  
+    
+    
+    
+    
+    <style class="hover"></style>
+    
+    <section class="demo">
+      <div class="card"></div>
+      <span class="operator">+</span>
+      <div class="card"><span>color-dodge</span></div>
+      <span class="operator">+</span>
+      <div class="card"><span>color-dodge</span></div>
+    </section>
+  
+    
+  </main>
+  
+  
+  <section class="promo">
+    <p>
+    <a href="https://codepen.io/simeydotme/pen/abYWJdX">
+      View Version 2, much improved here
+      <img src="https://booth.pximg.net/0e33e469-9aa9-4b6b-a1f7-8a17669c180a/i/1904022/6c5273b9-477e-4ddc-9c44-e3c0058fd87a_base_resized.jpg" alt="">
+    </a>
+    </p>
+  </section>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    </body>
+</html>

@@ -1,0 +1,67 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background: #ddffe1;
+    transition: all 0.3s 0.5s ease;
+    
+}
+
+.box:hover {
+    background: #ccc;
+    width: 300px;
+}
+.active {
+    transform: translateX(300px);
+    background: #f7f5f5;
+}
+#box2 {
+    width: 100px;
+    height: 100px;
+    background: #ffffff;
+    animation: rotation 2s ease 0s  infinite alternate none;  /* 追加 */
+}
+
+
+@keyframes rotation {
+    0% {
+        transform: scale(0.3);
+    }
+
+    50% {
+        transform: scale(0.6) rotate(-45deg);
+        background: rgb(17, 223, 241);
+    }
+
+    100% {
+        transform: scale(1) rotate(180deg);
+        background: rgba(251, 251, 250, 0.895);
+    }
+}
+.ball{
+    color: #e74747;/*文字色*/
+    padding: 0.5em 0;/*上下の余白*/
+    border-top: solid 3px #2b49a5;/*上線*/
+    border-bottom: solid 3px #3459c6;/*下線*/
+    margin: 100px;
+    width: 5em;
+
+    animation: ball 0.6s ease alternate infinite;
+}
+@keyframes ball{
+    0% {
+        transform:translate(0%, 0%);
+    }
+    100% {
+        transform:translate(0%, -60px);
+    }
+}
+.box {
+    align-items: center;
+    background-color: #3cb371;
+    color: #fff;
+    display: flex;
+    height: 120px;
+    justify-content: center;
+    margin: 50px auto;
+    width: 120px;
+}
